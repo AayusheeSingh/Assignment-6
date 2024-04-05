@@ -1,24 +1,24 @@
 import { Card, Form, Button, Alert } from "react-bootstrap";
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useState } from "react";
+import { useRouter } from "next/router";
 import { registerUser } from "@/lib/authenticate";
 
 export default function Register() {
   const [user, setUser] = useState("");
   const [password, setPassword] = useState("");
   const [password2, setPassword2] = useState("");
-  const [warning, setWarning] = useState('');
+  const [warning, setWarning] = useState("");
   const router = useRouter();
 
   async function handleSubmit(e) {
     e.preventDefault();
     if (password !== password2) {
-      setWarning('Passwords do not match.');
+      setWarning("Passwords do not match.");
       return;
     }
     try {
       await registerUser(user, password, password2);
-      router.push('/login');
+      router.push("/login");
     } catch (err) {
       setWarning(err.message);
     }

@@ -1,18 +1,20 @@
 /*********************************************************************************
-*  WEB422 – Assignment 5
+*  WEB422 – Assignment 6
 *
 *  I declare that this assignment is my own work in accordance with Seneca's
 *  Academic Integrity Policy:
 * 
 *  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
 * 
-*  Name: ____Aayushee Singh___ Student ID: ___173927211___ Date: ___4/21/2024___
-*  Vercel Link : https://web-422-assignment-5-ebon.vercel.app/
-*  Github URL :  https://github.com/AayusheeSingh/Web-422-Assignment-5-
+*  Name: __Aayushee Singh______ Student ID: __173927211____ Date: __$th April,2024______________
+*
+*  Vercel App (Deployed) Link: ___https://assignment-6-seven-nu.vercel.app/__________________________________________________
+*
 ********************************************************************************/ 
 
 
-import { Row, Col, Image } from 'react-bootstrap';
+
+import { Row, Col, Image } from "react-bootstrap";
 
 const Home = () => {
   return (

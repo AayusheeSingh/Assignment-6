@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Form, FormControl, Button, Container, NavDropdown } from 'react-bootstrap'; 
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useAtom } from 'jotai';
-import { searchHistoryAtom, tokenAtom } from '../store';
-import { addToHistory } from '@/lib/userData'; 
-import { readToken, removeToken } from '@/lib/authenticate'; 
+import React, { useState, useEffect } from "react";
+import { Navbar, Nav, Form, FormControl, Button, Container, NavDropdown } from "react-bootstrap"; 
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useAtom } from "jotai";
+import { searchHistoryAtom, tokenAtom } from "../store";
+import { addToHistory } from "@/lib/userData"; 
+import { readToken, removeToken } from "@/lib/authenticate"; 
 
 const MainNav = () => {
   const router = useRouter();
@@ -27,7 +27,7 @@ const MainNav = () => {
   const logout = () => {
     setIsExpanded(false);
     removeToken();
-    router.push('/login');
+    router.push("/login");
   };
 
   const collapseNavbar = () => setIsExpanded(false); 
